@@ -1,0 +1,17 @@
+@import 'carbon-components/scss/globals/scss/_vars.scss';
+
+.message {
+	width: 20%;
+	font-size: 1rem;
+	clear: both;
+}
+
+.messageLeft {
+	background-color: $carbon--cyan-70;
+	float: left;
+}
+
+.messageRight {
+	color: $carbon--cool-gray-100;
+	float: right;
+}

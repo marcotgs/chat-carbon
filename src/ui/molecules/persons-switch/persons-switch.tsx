@@ -6,18 +6,8 @@ const PersonSwitch: React.StatelessComponent<{
 }> = props => {
 	return (
 		<ContentSwitcher onChange={(_e, index) => props.onChange(index)} selectedIndex={0}>
-			<Switch
-				onClick={function noRefCheck() {}}
-				onKeyDown={function noRefCheck() {}}
-				selected={false}
-				text="Person 1"
-			/>
-			<Switch
-				onClick={function noRefCheck() {}}
-				onKeyDown={function noRefCheck() {}}
-				selected={false}
-				text="Person 2"
-			/>
+			<Switch onClick={() => {}} selected={false} text="Person 1" />
+			<Switch onClick={() => {}} selected={false} text="Person 2" />
 		</ContentSwitcher>
 	);
 };
