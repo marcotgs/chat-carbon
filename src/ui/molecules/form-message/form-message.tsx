@@ -12,6 +12,7 @@ const FormMessageMolecule: React.StatelessComponent<{
 			<Form className={styles.formChat} onSubmit={onSubmit}>
 				<TextInput
 					id="test2"
+					name="message"
 					hideLabel
 					labelText=""
 					placeholder="Send a message..."

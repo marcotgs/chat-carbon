@@ -1,5 +1,5 @@
 import React from 'react';
-import ChatOrganism from '../../organisms/chat/chat';
+import ChatOrganism from '../../organisms/chat/chat.connect';
 
 const ChatTemplate: React.StatelessComponent = () => {
 	return (
