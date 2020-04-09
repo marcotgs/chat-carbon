@@ -20,7 +20,7 @@ declare global {
 const epicMiddleware = createEpicMiddleware();
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
-const initialState: AppState = {
+export const initialState: AppState = {
 	messageState: {
 		messages: [],
 		newMessages: 0,
