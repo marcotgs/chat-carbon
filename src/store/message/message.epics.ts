@@ -10,3 +10,9 @@ export const sendMessagesEpic: Epic<RootAction, RootAction, AppState> = $action 
 		filter(isActionOf(actions.sendMessage)),
 		map(action => actions.messageSent(action.payload))
 	);
+
+export const readMessagesEpic: Epic<RootAction, RootAction, AppState> = $action =>
+	$action.pipe(
+		filter(isActionOf(actions.readMessages)),
+		map(() => actions.readMessagesSuccess())
+	);

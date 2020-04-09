@@ -9,6 +9,7 @@ interface OwnProps {}
 
 const mapStateToProps = (state: RootStateType) => ({
 	messages: state.messageState.messages,
+	newMessages: state.messageState.newMessages,
 });
 
 const mapDispatchToProps = (dispatch: Dispatch<RootActions>, props: OwnProps) => ({});

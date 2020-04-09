@@ -23,6 +23,7 @@ const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 const initialState: AppState = {
 	messageState: {
 		messages: [],
+		newMessages: 0,
 	},
 };
 

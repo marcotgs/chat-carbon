@@ -6,6 +6,7 @@ type Action = ActionType<typeof actions>;
 
 const initialState: MessageState = {
 	messages: [],
+	newMessages: 0,
 };
 
 export const messageReducer = (
@@ -14,7 +15,16 @@ export const messageReducer = (
 ): MessageState => {
 	switch (action.type) {
 		case getType(actions.messageSent):
-			return Object.assign({}, state, { messages: [...state.messages, action.payload] });
+			const messages = [...state.messages, action.payload];
+			return Object.assign({}, state, {
+				messages,
+				newMessages: state.newMessages + 1,
+			});
+
+		case getType(actions.readMessagesSuccess):
+			return Object.assign({}, state, {
+				newMessages: 0,
+			});
 
 		default:
 			return state;
